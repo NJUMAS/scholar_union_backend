@@ -17,9 +17,9 @@ public class ResponseFactory<T> {
         return new Response(OK_CODE, data);
     }
 
-    public static Response<String> errResponse(ServiceException e) {
-        return new Response(e.getCode(), e.getMessage());
-    }
+//    public static Response<String> errResponse(ServiceException e) {
+//        return new Response(e.getCode(), e.getMessage());
+//    }
 
     public static Response<String> errResponse(int errCode, String errMessage) {
         return new Response(errCode, errMessage);
